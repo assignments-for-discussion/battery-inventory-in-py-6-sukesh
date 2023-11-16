@@ -33,9 +33,9 @@ def test_bucketing_by_health():
   print("Done counting :)")
   # additional cases added
   print("Number of batteries given:",len(present_capacities)) #gives the number of total batteries
-  print("Number of batteries that are healthy",counts["healthy"]) #gives the count of healthy batteries
-  print("Number of batteries that are exhange",counts["exchange"])#gives the count of exchange batteries
-  print("Number of batteries that are failed",counts["failed"])#gives the count of failed batteries
+  print("Number of batteries that are healthy:",counts["healthy"]) #gives the count of healthy batteries
+  print("Number of batteries that are exhange:",counts["exchange"])#gives the count of exchange batteries
+  print("Number of batteries that are failed:",counts["failed"])#gives the count of failed batteries
 
 if __name__ == '__main__':
   test_bucketing_by_health()
