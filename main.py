@@ -36,6 +36,14 @@ def test_bucketing_by_health():
   print("Number of batteries that are healthy:",counts["healthy"]) #gives the count of healthy batteries
   print("Number of batteries that are exhange:",counts["exchange"])#gives the count of exchange batteries
   print("Number of batteries that are failed:",counts["failed"])#gives the count of failed batteries
-
+  max_cnt=max(counts.values())
+  print("Maximum number of batteries in a type is:",max_cnt) #printing the maximum number of batteries in a type
+  min_cnt=min(counts.values())
+  print("Minimum number of batteries in a type is:",min_cnt) #printing the minimum number of batteries in a type
+  for i in counts.keys():
+      if counts[i]==max_cnt:
+          print("The type containing maximum number of batteries :",i) #type containing maximum number of batteries
+      elif counts[i]==min_cnt:
+          print("The type containing minimum number of batteries :",i) #type containing minimum number of batteries
 if __name__ == '__main__':
   test_bucketing_by_health()
